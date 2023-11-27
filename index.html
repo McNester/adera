@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADERA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="flex flex-col justify-center items-center">
+
+    <div id="glass" class="absolute backdrop-blur-3xl rounded-xl shadow-lg h-[100vh] w-[100vw]">
+
+    </div>
+    <h1 id="logo" class="absolute text-white top-0 text-7xl mt-5">ADERA</h1>
+
+
+    <div id="manageBlock" class="flex flex-col justify-around items-center mt-32 backdrop-blur-none">
+
+        <div class="flex flex-row justify-between items-center w-[90%]">
+
+            <h1 class="text-white text-3xl">Главный поток</h1>
+
+            <label for="switch1" class="switches switch-button">
+                <div class="switch-outer">
+                    <input type="checkbox" id="switch1" />
+                    <div class="button">
+                        <span class="button-toggle"></span>
+                        <span class="button-indicator"></span>
+                    </div>
+                </div>
+            </label>
+
+            <div class="wrapperTank absolute right-0 mr-[25%] shadow-2xl">
+                <h1 id="amount1" class="text-3xl z-10">100%</h1>
+                <div class="wave absolute"></div>
+            </div>
+        </div>
+
+        <div class="flex flex-row justify-around items-center w-[91%]">
+
+            <h1 class="text-white text-3xl">Вода</h1>
+
+            <label for="switch2" class="switches switch-button">
+                <div class="switch-outer">
+                    <input type="checkbox" id="switch2" />
+                    <div class="button">
+                        <span class="button-toggle"></span>
+                        <span class="button-indicator"></span>
+                    </div>
+                </div>
+            </label>
+
+            <div class="wrapperTank absolute right-0 mr-[25%] shadow-2xl">
+                <h1 id="amount2" class="text-3xl z-10">100%</h1>
+                <div class="wave absolute"></div>
+            </div>
+        </div>
+        <div class="flex flex-row justify-around items-center w-[90%] ">
+
+            <h1 class="text-white text-3xl">Нутриенты</h1>
+
+            <label for="switch3" class="switches switch-button">
+                <div class="switch-outer">
+                    <input type="checkbox" id="switch3" />
+                    <div class="button">
+                        <span class="button-toggle"></span>
+                        <span class="button-indicator"></span>
+                    </div>
+                </div>
+            </label>
+
+            <div class="wrapperTank absolute right-0 mr-[25%] shadow-2xl">
+                <h1 id="amount3" class="text-3xl z-10">100%</h1>
+                <div class="wave absolute"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="data" class="wrapper">
+        <div class="skillbar">
+            <div class="skillbar__header">
+                <span class="skillbar__title">Влажность</span>
+                <span class="text-white skillbar__percent">65%</span>
+            </div>
+            <div class="skillbar__content">
+                <div class="skillbar__headway skillbar__RZ1ID"></div>
+            </div>
+        </div>
+        <div class="skillbar">
+            <div class="skillbar__header">
+                <span class="skillbar__title">Уровень нутриентов</span>
+                <span class="text-white skillbar__percent">75%</span>
+            </div>
+            <div class="skillbar__content">
+                <div class="skillbar__headway skillbar__RZ2ID"></div>
+            </div>
+        </div>
+        <div class="skillbar">
+            <div class="skillbar__header">
+                <span class="skillbar__title">Уровень солей</span>
+                <span class="text-white skillbar__percent">12.5%</span>
+            </div>
+            <div class="skillbar__content">
+                <div class="skillbar__headway skillbar__RZ3ID"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
